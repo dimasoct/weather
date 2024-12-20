@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-logo">WeatherApp</a>
+        <ul class="navbar-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Weather</a></li>
+          <li><a href="#">Forecast</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="navbar-toggle" id="navbar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="card" id="input-section">
+        <h2>Input</h2>
+        <input type="text" id="country" placeholder="Country" />
+        <input type="text" id="city" placeholder="City" />
+        <button id="check">Check Weather</button>
+      </div>
+      <div class="card" id="current-weather-section">
+        <h2>Current Weather</h2>
+        <div class="weather-info">
+          <div class="row" id="local-time"></div>
+          <div class="row" id="weatherCountry"></div>
+          <div class="row" id="temperature"></div>
+          <div class="row">
+            <img id="tempIcon" src="" alt="Weather Icon" />
+          </div>
+          <div class="row" id="weatherDescription"></div>
+          <div class="row" id="feelsLike"></div>
+          <div class="row" id="humidity"></div>
+          <div class="row" id="latitude"></div>
+          <div class="row" id="longitude"></div>
+        </div>
+      </div>
+      <div class="card" id="forecast-section">
+        <h2>Hourly Forecast</h2>
+        <div class="forecast-info" id="forecast-info">
+          <!-- Forecast data will be inserted here -->
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2024 Weather App. All rights reserved.</p>
+    </div>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>

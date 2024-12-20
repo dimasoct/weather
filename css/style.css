@@ -1,0 +1,250 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0; /* Menghilangkan padding */
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0; /* Menghilangkan padding */
+  box-sizing: border-box;
+}
+
+.header,
+.footer {
+  background-color: rgba(
+    76,
+    175,
+    80,
+    0.9
+  ); /* Membuat latar belakang transparan */
+  color: white;
+  text-align: center;
+  padding: 15px 20px; /* Mengurangi padding untuk kesan menyatu */
+  border-radius: 0; /* Menghapus border radius agar lebih menyatu */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background: transparent;
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 80px; /* Add margin to push down the container */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #0040ff; /* Blue background for the navbar */
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures the navbar stays on top */
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.navbar-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Menu for Mobile */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  transition: 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #0040ff;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navbar-menu a {
+    font-size: 1.2em;
+  }
+}
+
+.header,
+.footer {
+  background-color: #0040ff; /* Membuat latar belakang transparan */
+  color: white;
+  text-align: center;
+  padding: 15px 20px; /* Mengurangi padding untuk kesan menyatu */
+  border-radius: 0; /* Menghapus border radius agar lebih menyatu */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-top: 0; /* Menghapus margin agar lebih menyatu dengan body */
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  min-width: 280px;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+.card input,
+.card button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card button {
+  background-color: #0040ff;
+  color: white;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0040ff;
+}
+
+.weather-info,
+.forecast-info {
+  margin-top: 20px;
+}
+
+.weather-info img,
+.forecast-info img {
+  width: 50px;
+  height: 50px;
+}
+
+.weather-info div {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: none; /* Tersembunyi pada awalnya */
+}
+
+.weather-info div.visible {
+  display: block; /* Tampilkan setelah input */
+}
+
+#tempIcon {
+  display: none; /* Gambar tersembunyi pada awalnya */
+  margin: 0 auto; /* Posisikan gambar di tengah secara horizontal */
+}
+
+.forecast-item {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forecast-time,
+.forecast-icon,
+.forecast-description {
+  margin: 5px 0;
+}
+
+.forecast-time {
+  font-weight: bold;
+}
